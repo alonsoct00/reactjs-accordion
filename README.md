@@ -2,29 +2,34 @@
 React JS accordion component
 
 
-Accordion Component
+### Accordion Component
 The Accordion component is a reusable React component that allows you to create collapsible sections with questions and answers. It provides an intuitive way to display content in an organized manner while conserving space. This README file provides an overview of the component's structure, usage, and customization options.
 
-Table of Contents
-Installation
-Usage
-Props
-Styling
-Installation
+### Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [Props](#props)
+- [Styling](#styling)
+
+
 To use the Accordion component in your React project, follow these steps:
 
-Install the required dependencies:
+####Install the required dependencies:
 
-sh
+
+```sh
 npm install react prop-types classnames
 Import the Accordion component in your project:
+```
 
-jsx
+```jsx
 import Accordion from './path-to-accordion-component';
-Usage
+```
+
+####Usage
 To use the Accordion component, you need to pass an array of items, where each item contains a question and an answer. Here's an example of how to use the Accordion component:
 
-jsx
+```jsx
 import React from 'react';
 import Accordion from './path-to-accordion-component';
 
@@ -50,7 +55,9 @@ function App() {
 }
 
 export default App;
-Props
+```
+
+### Props
 The Accordion component accepts the following props:
 
 items (array, required)
@@ -59,12 +66,13 @@ An array of objects, each representing an item in the accordion. Each object sho
 question (string, required): The question to be displayed.
 answer (string, required): The answer to the question.
 className (string, optional)
-Custom CSS class name to apply to the root Accordion component.
 
-Styling
+###Custom CSS class name to apply to the root Accordion component.
+
+##Styling
 The Accordion component uses SCSS for styling. You can customize the appearance of the accordion by modifying the provided SCSS styles.
 
-Customization Tips
+###Customization Tips
 .accordion: This class represents the entire accordion. You can adjust its width or add other styles to control the accordion's appearance.
 
 .accordion-item: This class represents an individual accordion item. You can modify the border, margin, or other properties to change the spacing and appearance of each item.
