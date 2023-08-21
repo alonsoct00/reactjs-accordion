@@ -1,0 +1,40 @@
+
+.accordion {
+  width: 100%;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #000;
+  margin: 5px 0 20px 0;
+  overflow: hidden;
+}
+
+.accordion-question {
+  padding: 10px;
+  cursor: pointer;
+  position: relative;
+
+  &::after {
+    content: "";
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');
+    font-weight: 900;
+    position: absolute;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+
+  }
+  &.open::after {
+    content: "";
+    transform: translateY(-50%);
+    transition: transform 0.3s;
+    transform: rotate(180deg);
+  }
+}
+
+.accordion-answer {
+  padding: 10px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
